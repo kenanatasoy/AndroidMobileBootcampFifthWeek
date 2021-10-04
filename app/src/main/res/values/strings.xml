@@ -13,5 +13,6 @@
     <string name="meta_score_value">86</string>
     <string name="rate_title">Rate This</string>
     <string name="movie_rating">PG-13</string>
+    <string name="no_favorite_movies_text">No favorite movies have been added yet</string>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.example.androidmobilebootcampfifthweek.ui.favoriteMovies
 
 import android.content.Context
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidmobilebootcampfifthweek.R
 import com.example.androidmobilebootcampfifthweek.adapters.FavoriteMoviesAdapter
@@ -22,6 +23,16 @@ class FavoriteMoviesFragment : BaseFragment<FavoriteMoviesViewModel, FragmentFav
     override fun prepareView() {
 
         ultimateFavoriteMoviesList.addAll(getFavoriteMovies())
+
+        if (ultimateFavoriteMoviesList.size == 0){
+            dataBinding?.noFavoriteMoviesPresent!!.visibility = View.VISIBLE
+            dataBinding?.favoriteMoviesRecyclerView!!.visibility = View.GONE
+        }
+
+        else if(ultimateFavoriteMoviesList.size != 0){
+            dataBinding?.noFavoriteMoviesPresent!!.visibility = View.GONE
+            dataBinding?.favoriteMoviesRecyclerView!!.visibility = View.VISIBLE
+        }
 
         dataBinding?.favoriteMoviesRecyclerView?.adapter =
             FavoriteMoviesAdapter(ultimateFavoriteMoviesList)
