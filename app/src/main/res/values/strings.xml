@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidMobileBootcampFifthWeek</string>
+
+    <string name="movie_name">Ford v Ferrari</string>
+    <string name="movie_rate">8.2</string>
+    <string name="debut_year">2019</string>
+    <string name="movie_summary_title">Plot Summary</string>
+    <string name="movie_summary">American car designer Carroll Shelby and driver Kn Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order.</string>
+    <string name="cast_crew_title"><![CDATA[Cast & Crew]]></string>
+    <string name="details"><![CDATA[Details >>]]></string>
+    <string name="no_internet_state">Currently disconnected</string>
+    <string name="meta_score">Metascore</string>
+    <string name="meta_score_value">86</string>
+    <string name="rate_title">Rate This</string>
+    <string name="movie_rating">PG-13</string>
+
+</resources>
