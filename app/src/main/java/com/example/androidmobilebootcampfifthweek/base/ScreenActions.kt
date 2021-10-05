@@ -1,6 +1,6 @@
 package com.example.androidmobilebootcampfifthweek.base
 
-interface FragmentActions {
+interface ScreenActions {
 
     fun shouldCheckInternetConnection(): Boolean
 

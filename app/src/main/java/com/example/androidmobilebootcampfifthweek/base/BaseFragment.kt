@@ -9,9 +9,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
-import com.example.androidmobilebootcampfifthweek.utils.showToast
 
-abstract class BaseFragment<VM : ViewModel?, DB : ViewDataBinding> : Fragment(), FragmentActions {
+abstract class BaseFragment<VM : ViewModel?, DB : ViewDataBinding> : Fragment(), ScreenActions {
 
     abstract var viewModel: VM?
     protected var dataBinding: DB? = null
@@ -52,4 +51,6 @@ abstract class BaseFragment<VM : ViewModel?, DB : ViewDataBinding> : Fragment(),
         TODO("Not yet implemented")
     }
 
+
 }
+

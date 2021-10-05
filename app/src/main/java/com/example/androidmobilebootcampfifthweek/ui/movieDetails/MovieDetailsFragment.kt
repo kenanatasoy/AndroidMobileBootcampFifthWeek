@@ -41,19 +41,21 @@ class MovieDetailsFragment : BaseFragment<MovieDetailsViewModel, FragmentMovieDe
 
     }
 
-    override fun onResume() {
-        super.onResume()
-
-        val activity = activity as MainActivity
-
-        activity.onBackPressedDispatcher.addCallback(viewLifecycleOwner, object :
-            OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                activity.finish()
-            }
-        })
-
-    }
+    //region optional backbutton functionality
+//    override fun onResume() {
+//        super.onResume()
+//
+//        val activity = activity as MainActivity
+//
+//        activity.onBackPressedDispatcher.addCallback(viewLifecycleOwner, object :
+//            OnBackPressedCallback(true) {
+//            override fun handleOnBackPressed() {
+//                activity.finish()
+//            }
+//        })
+//
+//    }
+    //endregion
 
     override fun observeLiveData() {
 

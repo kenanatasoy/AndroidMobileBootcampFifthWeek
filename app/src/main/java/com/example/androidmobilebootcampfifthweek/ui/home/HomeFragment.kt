@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import com.example.androidmobilebootcampfifthweek.R
 import com.example.androidmobilebootcampfifthweek.databinding.FragmentHomeBinding
 import com.example.androidmobilebootcampfifthweek.adapters.ViewPagerAdapter
-import com.example.androidmobilebootcampfifthweek.base.FragmentActions
 import com.example.androidmobilebootcampfifthweek.ui.favoriteMovies.FavoriteMoviesFragment
 import com.example.androidmobilebootcampfifthweek.ui.popularMovies.PopularMoviesFragment
 import com.google.android.material.tabs.TabLayoutMediator
